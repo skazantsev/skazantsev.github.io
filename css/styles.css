@@ -1,55 +1,49 @@
-/* General layout */
-#wrapper {
-	background-color: #FFF;
-	max-width: 1100px;
-	margin: 100px auto;
-	position: relative;
+body {
+	background: #222 url(../images/bg-body.png) repeat top left;
+	color: #444;
+	font: 13px 'Open Sans', Arial, sans-serif;
+	line-height: 21px;
+	min-width: 650px;
 }
-	
-#header { border-top: 10px solid #6dd24e; }
 
-#header .resume-section:first-child {
-	border-top: 0;
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
+.main {
+	background-color: #FFF;
+	margin: 50px auto;
+	padding: 0 50px;
+	position: relative;
+	border-top: 10px solid #6dd24e;
 }
 
 .resume-section {
-	width: 940px;
-	margin: 0 auto;
-	position: relative;
-	padding: 65px 0;
+	margin: 0;
+	padding: 50px 0;
 	border-top: 1px solid #dadada;
 }
 
-#resume-title {
-	padding: 0;
-}
-
-#resume-title img {
-	float: left;
-	display: block;
-	margin-right: 20px;
+.resume-header .avatar {
+	width: 200px;
+	height: 200px;
 	padding: 5px;
 	border: 1px solid #dadada;
 }
 
-#resume-title h1 { padding-top: 10px; }
-	
-#resume-title h1 small {
+.resume-header .resume-title {
+	margin-top: 0;
+}
+
+.resume-header .resume-title > .position {
 	color: inherit;
-	font-size: 24px;
 	font-weight: inherit;
-	line-height: 48px;
+	font-size: 24px;
+	line-height: 36px;
 	text-transform: uppercase;
 	display: block;
-}
-
-#resume-info {
-	padding-left: 45px;
-	padding-right:0;
-}
-
-#resume-info .row:after {
-	clear:none;
 }
 
 .resume-section-title h2 {
@@ -69,7 +63,13 @@
 	margin-bottom: 0;
 }
 
-.resume-section-item h3 { margin-bottom: 0; }
+.resume-section-item h3 {
+	margin-bottom: 0;
+}
+
+.resume-section-skills .skill > i {
+	color: #6dd24e;
+}
 
 .period {
 	float: right;
@@ -82,7 +82,9 @@
 	text-transform: uppercase;		
 }
 
-.resume-section-item:hover .period { background-color: #6dd24e; }
+.resume-section-item:hover .period {
+	background-color: #6dd24e;
+}
 
 a.highlighted,
 a.highlighted:visited {
@@ -99,46 +101,6 @@ a.highlighted:focus {
 	outline: #6dd24e dotted thin;
 }
 
-.contact-info {
-	margin-left: 55px;
-}
-
-@media (max-width: 991px) {
-    .contact-info {
-		margin: 30px 0 0 0;
-	}
-}
-
-/* Social media */
-.social-media { margin-bottom: 20px; }
-
-a.social-media-icon {
-	float: left;
-	display: block;
-	width: 32px;
-	margin-right: 15px;
-	margin-bottom: 5px;
-	background-color: #252525;
-	color: #fff;
-	text-align: center;
-}
-
-a.social-media-icon:last-child { margin-right: 0; }
-
-a.social-media-icon i {
-	font-size: 16px;
-	line-height: 32px;
-}
-
-a.social-media-icon:hover { text-decoration: none; }
-
-a.github-icon:hover { background-color: #070709; }
-a.linkedin-icon:hover { background-color: #0085AE; }
-a.skype-icon:hover { background-color: #01AEF2; }
-a.stack-overflow-icon:hover { background-color: #FF7300; }
-
-
-/* List items */
 ul.check,
 ul.arrow-right {
 	list-style: none;
