@@ -3,7 +3,16 @@ body {
 	color: #444;
 	font: 13px 'Open Sans', Arial, sans-serif;
 	line-height: 21px;
-	min-width: 620px;
+	min-width: 500px;
+}
+
+h3 {
+	margin-bottom: 0;
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 16px;
 }
 
 @media print {
@@ -14,7 +23,7 @@ body {
 
 .main {
 	background-color: #FFF;
-	margin: 50px auto;
+	margin: 75px auto;
 	padding: 0 50px;
 	position: relative;
 	border-top: 10px solid #6dd24e;
@@ -34,7 +43,7 @@ body {
 
 .resume-section {
 	margin: 0;
-	padding: 50px 0;
+	padding: 40px 0;
 	border-top: 1px solid #dadada;
 }
 
@@ -45,7 +54,7 @@ body {
 }
 
 .resume-section .resume-section-title {
-	font-size: 26px;
+	font-size: 24px;
 	color: #b1b1b1;
 }
 
@@ -58,10 +67,6 @@ body {
 .resume-section .resume-section-item:last-child {
 	padding-bottom: 0;
 	border-bottom: none;
-	margin-bottom: 0;
-}
-
-.resume-section .resume-section-item > .resume-section-item-title {
 	margin-bottom: 0;
 }
 
@@ -89,19 +94,26 @@ body {
 	display: block;
 }
 
-.period {
+.experience {
+	margin-bottom: 25px;
+}
+.experience > .period {
 	float: right;
 	padding: 12px 20px;
+	margin-left: 10px;
 	background-color: #b1b1b1;
 	color: #fff;
-	-webkit-transition: background-color 0.3s;
- 	-o-transition: background-color 0.3s;
 	transition: background-color 0.3s;
-	text-transform: uppercase;		
+	text-transform: uppercase;
 }
 
 .resume-section-item:hover .period {
 	background-color: #6dd24e;
+}
+
+ul {
+	margin: 0 0 20px 20px;
+	padding: 0;
 }
 
 ul.check,
