@@ -6,6 +6,10 @@ body {
 	min-width: 500px;
 }
 
+h1 {
+	font-size: 32px;
+}
+
 h3 {
 	margin-bottom: 0;
 	font-size: 20px;
@@ -43,14 +47,8 @@ h4 {
 
 .resume-section {
 	margin: 0;
-	padding: 40px 0;
+	padding: 20px 0;
 	border-top: 1px solid #dadada;
-}
-
-@media (max-width: 767px) {
-	.resume-section {
-		padding: 30px 0;
-	}
 }
 
 .resume-section .resume-section-title {
@@ -59,9 +57,9 @@ h4 {
 }
 
 .resume-section .resume-section-item {
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	border-bottom: 1px solid #dadada;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .resume-section .resume-section-item:last-child {
@@ -113,7 +111,6 @@ h4 {
 }
 
 ul {
-	margin: 0 0 20px 20px;
 	padding: 0;
 }
 
@@ -142,4 +139,9 @@ ul.arrow-right li:before {
 
 ul.arrow-right li:before {
 	content: '\f061';
+}
+
+/* Helpers */
+.monospace {
+	font-family: monospace, monospace;
 }
